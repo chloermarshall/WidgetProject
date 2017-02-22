@@ -29,9 +29,11 @@ int counter;
 
 
 - (IBAction)buttonPressed:(id)sender {
-    ++counter;
-    _buttonLabel.text = [[NSString alloc] initWithFormat:@"Button was pressed %d times", counter ];
+     ++counter;
+    _buttonLabel.text = [[NSString alloc] initWithFormat:@"Pressed %d times", counter ];
+    [_button setTitle:_buttonLabel.text forState:UIControlStateNormal];
 }
+
 
 - (IBAction)segementSelector:(id)sender {
     if(_segment.selectedSegmentIndex == 0){

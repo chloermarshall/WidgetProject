@@ -26,6 +26,5 @@
 - (IBAction)sliderValueChanged:(id)sender;
 - (IBAction)switchPressed:(id)sender;
 - (IBAction)updateButtonPressed:(id)sender;
-
 @end
 
